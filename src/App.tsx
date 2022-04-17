@@ -18,7 +18,7 @@ function App() {
         setCurrentCategory(modified);
       }
       const { data } = await axios.get(
-        `http://gateway.marvel.com/v1/public/characters?orderBy=${modified}&limit=10&offset=${offset}&apikey=f11f5c8b791a1fb6dc36a2b7663c26ad&hash=984ad03c70022ee8cf0e911583259b2e`
+        `https://gateway.marvel.com/v1/public/characters?orderBy=${modified}&limit=10&offset=${offset}&apikey=f11f5c8b791a1fb6dc36a2b7663c26ad&hash=984ad03c70022ee8cf0e911583259b2e`
       );
       if (type === "updateHeroes") {
         return setHeroesList([...heroesList, ...data.data.results]);

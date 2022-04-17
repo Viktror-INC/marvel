@@ -16,7 +16,7 @@ export default function Search() {
     if (value) {
       setShowSearch(true);
       const { data } = await axios.get(
-        `http://gateway.marvel.com/v1/public/characters?nameStartsWith=${value}&limit=10&apikey=f11f5c8b791a1fb6dc36a2b7663c26ad&hash=984ad03c70022ee8cf0e911583259b2e`
+        `https://gateway.marvel.com/v1/public/characters?nameStartsWith=${value}&limit=10&apikey=f11f5c8b791a1fb6dc36a2b7663c26ad&hash=984ad03c70022ee8cf0e911583259b2e`
       );
       return setHeroes(data.data.results);
     }
