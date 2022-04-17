@@ -30,8 +30,8 @@ export default function Search() {
           <img
             src="/images/header/search.png"
             alt="search"
-            width={20}
-            height={20}
+            width={30}
+            height={30}
           />
         </div>
       </label>

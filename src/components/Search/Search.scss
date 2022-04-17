@@ -10,18 +10,20 @@
   max-width: 300px;
 
   input {
+    font-size: 20px;
     background-color: transparent;
     border: none;
     outline: none;
-    padding: 8px;
+    padding: 10px 5px;
     width: 100%;
   }
 }
 
 .searchImageWrap {
-  padding: 8px;
+  padding: 10px 15px;
   height: 100%;
-  display: block;
+  display: flex;
+  align-items: center;
   top: 0;
   z-index: 2;
   background-color: $orange;
