@@ -47,7 +47,7 @@ export default function Heroes() {
                 <ul className="comicsWrap">
                   {hero.comics.items[0]
                     ? hero.comics.items.map((item, index) => {
-                        return <li>{item.name}</li>;
+                        return <li key={index}>{item.name}</li>;
                       })
                     : "Comics not Found"}
                 </ul>

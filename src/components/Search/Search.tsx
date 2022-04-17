@@ -11,6 +11,8 @@ export default function Search() {
   const [showSearch, setShowSearch] = useState(false);
 
   const getHeroes = async (value: string) => {
+    console.log("value", value);
+
     if (value) {
       setShowSearch(true);
       const { data } = await axios.get(
@@ -45,7 +47,7 @@ export default function Search() {
         }}
       />
 
-      {showSearch && (
+      {showSearch && heroes.length > 0 && (
         <ul
           className={classNames("resultsWrap", {
             resultsWrapActive: value && heroes.length > 0,
