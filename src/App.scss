@@ -1,0 +1,113 @@
+@import "/src/styles/global.scss";
+
+.main {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filterWrap {
+  margin-top: 10px;
+  display: flex;
+  column-gap: 10px;
+
+  @media only screen and (max-width: $tab) {
+    flex-direction: column;
+    margin: 10px auto 0 0;
+  }
+}
+
+.filterList {
+  display: flex;
+  column-gap: 10px;
+
+  @media only screen and (max-width: $tab) {
+    margin-top: 10px;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+}
+
+.listItem {
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.activeFilter {
+  border-bottom: 2px solid $orange;
+}
+
+.heroesListWrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  column-gap: 20px;
+  row-gap: 20px;
+
+  @media only screen and (max-width: $tabBig) {
+    align-items: center;
+    justify-content: center;
+  }
+
+  li {
+    width: 100%;
+    max-width: 31%;
+    min-width: 250px;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      width: 100%;
+      display: flex;
+    }
+  }
+}
+
+.mainTextWrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  height: 50%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  color: $white;
+  background-color: $blackTransparent;
+}
+
+.heroesName {
+  color: $white;
+  font-size: 20px;
+}
+
+.heroesDescription {
+  margin-top: 10px;
+}
+
+.heroesButton {
+  display: flex;
+  margin: auto 0 0 auto;
+  background-color: $orange;
+  color: $white;
+  border: none;
+  font-size: 20px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.loadMoreButton {
+  margin-top: 50px;
+  font-size: 20px;
+  border: none;
+
+  background-color: $orange;
+  color: $white;
+  padding: 20px;
+  width: 100%;
+  border-radius: 10px;
+}

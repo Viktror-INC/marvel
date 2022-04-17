@@ -1,0 +1,14 @@
+@import "/src/styles/global.scss";
+
+.footer {
+  background-color: $black;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.footerName {
+  display: flex;
+  color: $orange;
+  font-size: 50px;
+  justify-content: center;
+}
